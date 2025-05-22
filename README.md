@@ -1,8 +1,31 @@
-# Introductory_analysis_on_US_hospital_cost
-cost-effectiveness analysis on US hospital from 2018 to 2022, the datasets are publiced by CMS. This project includes statistical analysis, cost-effectiveness analysis, and visualization on PowerBI.
+# Executive Summary of Introductory Analysis on US Hospital Cost
 
-## Skills Used
-This project used SAS (SAS Studio) and Power BI, SAS is mainly used for data preprocessing, statistical analysis, and cost-effectiveness analysis. Power BI is used for data visualization and dashboard reports.
+## Project Overview
 
-## Introduction to Approaches
-I imported csv datasets into SAS Studio, then create year variables, and assign the year to each dataset, then adjust data types for combination. After modifying variables' type in SAS to ensure alignment, I merged all datasets into one dataset for more accessible and easy to analyze.
+The project's objective is to analyze the Hospital Cost Datasets (2017–2022) from Centers for Medicare & Medicaid Services (CMS) to uncover cost trends and regional variations, also indicate the relationship between total cost and hospital types of control. The author used SAS for data preprocessing and R for data analysis.
+
+I also imported the census data to calculate the total per capita cost.
+
+## Data Preprocessing
+
+The raw dataset is in the form of CSV file, I uploaded all datasets into SAS Studio, and used macro program to import CSVs into SAS console. Then standardized data format, renamed the variables to comply the column name regulations in SAS and R.
+
+## Exploratory Analysis & Visualizations
+
+**Trend of Per-Capita Cost:** I analyzed the cost trend among states, and add variables to mark the regions and divisions based on states. I outputted the trend plots of total per capita cost based on states, regions, and divisions.
+
+**Type of Control Share:**
+
+I grouped 13 types of control into 3 big groups: Voluntary, Proprietary, and Governmental. The per-capita cost in Voluntary and Governmental are significantly lower than the Proprietary.
+
+## Key Insights
+
+- The total cost increased over the years.
+- The New England area had the highest per-capita cost
+- The type of control share significantly impacted on the total cost.
+
+## Limitations and Further Work
+
+No reasonable variable is found as target variable in this case. And all attempts of model prediction performed bad.
+
+Due to the limitation of accounting knowledge, I can not deep analysis the components of cost in this time, I can only analyze the trend and pattern cross different factors instead. In the further work, I am going to research more on hospital accounting, to uncover the insights about hospital cost.
