@@ -1,6 +1,6 @@
 # Executive Summary of Introductory Analysis on US Hospital Cost
 ## Project Overview
-The project's objective is to analyze the Hospital Cost Datasets (2017–2022) from Centers for Medicare & Medicaid Services (CMS) to uncover cost trends and regional variations, also indicate the relationship between total cost and hospital types of control. The author used SAS for data preprocessing and R for data analysis.
+The project's objective is to analyze the Hospital Cost Reports (2017–2022) from Centers for Medicare & Medicaid Services (CMS) to uncover cost trends and regional variations, also indicate the relationship between total cost and hospital types of control. The author used SAS for data preprocessing and R for data analysis.
 I also imported the census data to calculate the total per capita cost.
 ## Data Preprocessing
 The raw dataset is in the form of CSV file, I uploaded all datasets into SAS Studio, and used macro program to import CSVs into SAS console. Then standardized data format, renamed the variables to comply the column name regulations in SAS and R.
